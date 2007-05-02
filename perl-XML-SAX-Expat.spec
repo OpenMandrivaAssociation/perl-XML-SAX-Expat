@@ -1,7 +1,7 @@
 %define realname   XML-SAX-Expat
 
 Name:		perl-%{realname}
-Version:    0.37
+Version:    0.38
 Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
