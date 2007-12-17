@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:    SAX2 Driver for perl Expat Module
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-SAX-Expat-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
 BuildRequires: perl(XML::SAX::Base)
 BuildRequires: perl(XML::Parser)         
