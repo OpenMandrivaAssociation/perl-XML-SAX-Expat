@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    0.39
-Release:    %mkrel 1
+Release:    %mkrel 2
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    SAX2 Driver for perl Expat Module
