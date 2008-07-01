@@ -1,8 +1,8 @@
 %define realname   XML-SAX-Expat
 
 Name:		perl-%{realname}
-Version:    0.39
-Release:    %mkrel 3
+Version:    0.40
+Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    SAX2 Driver for perl Expat Module
