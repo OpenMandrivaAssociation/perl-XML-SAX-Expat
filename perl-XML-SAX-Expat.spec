@@ -1,26 +1,28 @@
-%define realname   XML-SAX-Expat
+%define upstream_name    XML-SAX-Expat
+%define upstream_version 0.40
 
-Name:		perl-%{realname}
-Version:    0.40
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
-License:	Artistic or GPL
+
+License:	Artistic or GPL+
 Group:		Development/Perl
 Summary:    SAX2 Driver for perl Expat Module
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-SAX-Expat-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-SAX-Expat-%{upstream_version}.tar.bz2
+
 BuildRequires: perl(XML::SAX::Base)
 BuildRequires: perl(XML::Parser)         
 BuildRequires: perl(XML::NamespaceSupport)
 BuildRequires: perl(XML::SAX)            
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 An implementation of a SAX2 driver sitting on top of Expat (XML::Parser). 
 
 %prep
-%setup -q -n XML-SAX-Expat-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 # some autoregistration stufif, moved to %post
 perl -pi -e 'm/^sub MY/ and exit' Makefile.PL
 chmod -x Changes
@@ -48,4 +50,3 @@ perl -MXML::SAX -e "XML::SAX->add_parser(q(XML::SAX::Expat))->save_parsers()"
 %doc Changes
 %{perl_vendorlib}/XML
 %{_mandir}/man3/*
-
