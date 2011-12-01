@@ -34,12 +34,12 @@ chmod -x Changes
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
-chmod -x $RPM_BUILD_ROOT/%{perl_vendorlib}/XML/SAX/Expat.pm
+chmod -x %{buildroot}/%{perl_vendorlib}/XML/SAX/Expat.pm
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post 
 # directly taken from Makefile
