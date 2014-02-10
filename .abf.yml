@@ -1,4 +1,5 @@
 removed_sources:
   XML-SAX-Expat-0.40.tar.bz2: b125c9f462a9f2f874a0563446da10857ff9e215
-sources:
   XML-SAX-Expat-0.50.tar.gz: dcf2103d0b8989f85facf33c993b7c3d75a36bb7
+sources:
+  XML-SAX-Expat-0.51.tar.gz: 74609fe5ee5011eac193fbf1ae20e327ce12372c

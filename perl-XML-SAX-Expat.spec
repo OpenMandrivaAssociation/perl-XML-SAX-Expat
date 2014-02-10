@@ -1,5 +1,5 @@
 %define modname	XML-SAX-Expat
-%define modver 0.50
+%define modver 0.51
 
 Summary:	SAX2 Driver for perl Expat Module
 Name:		perl-%{modname}
@@ -44,5 +44,6 @@ perl -MXML::SAX -e "XML::SAX->add_parser(q(XML::SAX::Expat))->save_parsers()"
 %doc Changes
 %{perl_vendorlib}/XML
 %{_mandir}/man3/*
+
 
 
