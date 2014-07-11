@@ -4,7 +4,7 @@
 Summary:	SAX2 Driver for perl Expat Module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 License:	Artistic or GPLv2+
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
