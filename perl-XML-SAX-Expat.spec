@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/XML/XML-SAX-Expat-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::SAX::Base)
 BuildRequires:	perl(XML::Parser)         
